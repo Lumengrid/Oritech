@@ -46,6 +46,7 @@ public class ModelGenerator extends FabricModelProvider {
         blockStateModelGenerator.registerNorthDefaultHorizontalRotation(BlockContent.FERTILIZER_BLOCK);
         
         blockStateModelGenerator.registerStateWithModelReference(BlockContent.PUMP_BLOCK, BlockContent.MACHINE_SPEED_ADDON);
+        blockStateModelGenerator.registerStateWithModelReference(BlockContent.PUMP_BLOCK, BlockContent.MACHINE_SPEED_ADDON_TIER_2);
         blockStateModelGenerator.registerSimpleState(BlockContent.CHARGER_BLOCK);
         
         blockStateModelGenerator.registerSimpleCubeAll(BlockContent.ADDON_INDICATOR_BLOCK);
@@ -106,7 +107,33 @@ public class ModelGenerator extends FabricModelProvider {
         blockStateModelGenerator.registerStateWithModelReference(BlockContent.REACTOR_EXPLOSION_SMALL, BlockContent.MACHINE_SPEED_ADDON);
         blockStateModelGenerator.registerStateWithModelReference(BlockContent.REACTOR_EXPLOSION_MEDIUM, BlockContent.MACHINE_SPEED_ADDON);
         blockStateModelGenerator.registerStateWithModelReference(BlockContent.REACTOR_EXPLOSION_LARGE, BlockContent.MACHINE_SPEED_ADDON);
-        
+
+        blockStateModelGenerator.registerStateWithModelReference(BlockContent.PULVERIZER_BLOCK, BlockContent.MACHINE_SPEED_ADDON_TIER_2);
+        blockStateModelGenerator.registerStateWithModelReference(BlockContent.FRAGMENT_FORGE_BLOCK, BlockContent.MACHINE_SPEED_ADDON_TIER_2);
+        blockStateModelGenerator.registerStateWithModelReference(BlockContent.ASSEMBLER_BLOCK, BlockContent.MACHINE_SPEED_ADDON_TIER_2);
+        blockStateModelGenerator.registerStateWithModelReference(BlockContent.FOUNDRY_BLOCK, BlockContent.MACHINE_SPEED_ADDON_TIER_2);
+        blockStateModelGenerator.registerStateWithModelReference(BlockContent.COOLER_BLOCK, BlockContent.MACHINE_SPEED_ADDON_TIER_2);
+        blockStateModelGenerator.registerStateWithModelReference(BlockContent.CENTRIFUGE_BLOCK, BlockContent.MACHINE_SPEED_ADDON_TIER_2);
+        blockStateModelGenerator.registerStateWithModelReference(BlockContent.ATOMIC_FORGE_BLOCK, BlockContent.MACHINE_SPEED_ADDON_TIER_2);
+        blockStateModelGenerator.registerStateWithModelReference(BlockContent.POWERED_FURNACE_BLOCK, BlockContent.MACHINE_SPEED_ADDON_TIER_2);
+        blockStateModelGenerator.registerStateWithModelReference(BlockContent.LASER_ARM_BLOCK, BlockContent.MACHINE_SPEED_ADDON_TIER_2);
+        blockStateModelGenerator.registerStateWithModelReference(BlockContent.BIO_GENERATOR_BLOCK, BlockContent.MACHINE_SPEED_ADDON_TIER_2);
+        blockStateModelGenerator.registerStateWithModelReference(BlockContent.FUEL_GENERATOR_BLOCK, BlockContent.MACHINE_SPEED_ADDON_TIER_2);
+        blockStateModelGenerator.registerStateWithModelReference(BlockContent.BASIC_GENERATOR_BLOCK, BlockContent.MACHINE_SPEED_ADDON_TIER_2);
+        blockStateModelGenerator.registerStateWithModelReference(BlockContent.LAVA_GENERATOR_BLOCK, BlockContent.MACHINE_SPEED_ADDON_TIER_2);
+        blockStateModelGenerator.registerStateWithModelReference(BlockContent.BIG_SOLAR_PANEL_BLOCK, BlockContent.MACHINE_SPEED_ADDON_TIER_2);
+        blockStateModelGenerator.registerStateWithModelReference(BlockContent.DEEP_DRILL_BLOCK, BlockContent.MACHINE_SPEED_ADDON_TIER_2);
+        blockStateModelGenerator.registerStateWithModelReference(BlockContent.DRONE_PORT_BLOCK, BlockContent.MACHINE_SPEED_ADDON_TIER_2);
+        blockStateModelGenerator.registerStateWithModelReference(BlockContent.TECH_DOOR, BlockContent.MACHINE_SPEED_ADDON_TIER_2);
+        blockStateModelGenerator.registerStateWithModelReference(BlockContent.TECH_DOOR_HINGE, BlockContent.MACHINE_SPEED_ADDON_TIER_2);
+        blockStateModelGenerator.registerStateWithModelReference(BlockContent.TREEFELLER_BLOCK, BlockContent.MACHINE_SPEED_ADDON_TIER_2);
+        blockStateModelGenerator.registerStateWithModelReference(BlockContent.STEAM_ENGINE_BLOCK, BlockContent.MACHINE_SPEED_ADDON_TIER_2);
+        blockStateModelGenerator.registerStateWithModelReference(BlockContent.PIPE_BOOSTER_BLOCK, BlockContent.MACHINE_SPEED_ADDON_TIER_2);
+        blockStateModelGenerator.registerStateWithModelReference(BlockContent.PARTICLE_COLLECTOR_BLOCK, BlockContent.MACHINE_SPEED_ADDON_TIER_2);
+        blockStateModelGenerator.registerStateWithModelReference(BlockContent.REACTOR_EXPLOSION_SMALL, BlockContent.MACHINE_SPEED_ADDON_TIER_2);
+        blockStateModelGenerator.registerStateWithModelReference(BlockContent.REACTOR_EXPLOSION_MEDIUM, BlockContent.MACHINE_SPEED_ADDON_TIER_2);
+        blockStateModelGenerator.registerStateWithModelReference(BlockContent.REACTOR_EXPLOSION_LARGE, BlockContent.MACHINE_SPEED_ADDON_TIER_2);
+
         blockStateModelGenerator.registerSimpleCubeAll(BlockContent.MACHINE_CORE_1);
         blockStateModelGenerator.registerSimpleCubeAll(BlockContent.MACHINE_CORE_2);
         blockStateModelGenerator.registerSimpleCubeAll(BlockContent.MACHINE_CORE_3);
@@ -123,6 +150,8 @@ public class ModelGenerator extends FabricModelProvider {
         blockStateModelGenerator.registerCrop(BlockContent.WITHER_CROP_BLOCK, CropBlock.AGE, 0, 0, 1, 2, 3, 3, 4, 5);
         blockStateModelGenerator.registerStateWithModelReference(BlockContent.ENCHANTER_BLOCK, BlockContent.MACHINE_SPEED_ADDON);   // uses geckolib
         blockStateModelGenerator.registerStateWithModelReference(BlockContent.ENCHANTMENT_CATALYST_BLOCK, BlockContent.MACHINE_SPEED_ADDON);   // uses geckolib
+        blockStateModelGenerator.registerStateWithModelReference(BlockContent.ENCHANTER_BLOCK, BlockContent.MACHINE_SPEED_ADDON_TIER_2);   // uses geckolib
+        blockStateModelGenerator.registerStateWithModelReference(BlockContent.ENCHANTMENT_CATALYST_BLOCK, BlockContent.MACHINE_SPEED_ADDON_TIER_2);   // uses geckolib
         
         // particle accelerator
         blockStateModelGenerator.registerSimpleState(BlockContent.ACCELERATOR_RING);

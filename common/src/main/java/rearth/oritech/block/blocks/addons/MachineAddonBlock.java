@@ -54,12 +54,14 @@ public class MachineAddonBlock extends WallMountedBlock implements BlockEntityPr
     public static VoxelShape[][] MACHINE_CAPACITOR_ADDON_SHAPE;
     public static VoxelShape[][] CROP_FILTER_ADDON_SHAPE;
     public static VoxelShape[][] MACHINE_EFFICIENCY_ADDON_SHAPE;
+    public static VoxelShape[][] MACHINE_EFFICIENCY_ADDON_TIER_2_SHAPE;
     public static VoxelShape[][] MACHINE_FLUID_ADDON_SHAPE;
     public static VoxelShape[][] MACHINE_INVENTORY_PROXY_ADDON_SHAPE;
     public static VoxelShape[][] QUARRY_ADDON_SHAPE;
     public static VoxelShape[][] MACHINE_HUNTER_ADDON_SHAPE;
     public static VoxelShape[][] MACHINE_REDSTONE_ADDON_SHAPE;
     public static VoxelShape[][] MACHINE_SPEED_ADDON_SHAPE;
+    public static VoxelShape[][] MACHINE_SPEED_ADDON_TIER_2_SHAPE;
     public static VoxelShape[][] STEAM_BOILER_ADDON_SHAPE;
     public static VoxelShape[][] MACHINE_YIELD_ADDON_SHAPE;
     
@@ -204,14 +206,18 @@ public class MachineAddonBlock extends WallMountedBlock implements BlockEntityPr
             
             if (addonSettings.speedMultiplier() != 1) {
                 var displayedNumber = (int) ((1 - addonSettings.speedMultiplier()) * 100);
-                tooltip.add(Text.translatable("tooltip.oritech.addon_speed_desc").formatted(Formatting.DARK_GRAY)
-                              .append(TooltipHelper.getFormattedValueChangeTooltip(displayedNumber)));
+                tooltip.add(Text.translatable(
+                        addonSettings.tier == 1 ? "tooltip.oritech.addon_speed_desc": "tooltip.oritech.addon_speed_tier_2_desc")
+                        .formatted(Formatting.DARK_GRAY)
+                        .append(TooltipHelper.getFormattedValueChangeTooltip(displayedNumber)));
             }
             
             if (addonSettings.efficiencyMultiplier() != 1) {
                 var displayedNumber = (int) ((1 - addonSettings.efficiencyMultiplier()) * 100);
-                tooltip.add(Text.translatable("tooltip.oritech.addon_efficiency_desc").formatted(Formatting.DARK_GRAY)
-                              .append(TooltipHelper.getFormattedValueChangeTooltip(displayedNumber)));
+                tooltip.add(Text.translatable(
+                        addonSettings.tier == 1 ? "tooltip.oritech.addon_efficiency_desc" :  "tooltip.oritech.addon_efficiency_tier_2_desc")
+                        .formatted(Formatting.DARK_GRAY)
+                        .append(TooltipHelper.getFormattedValueChangeTooltip(displayedNumber)));
             }
 
             if (addonSettings.addedCapacity() != 0) {
@@ -262,12 +268,14 @@ public class MachineAddonBlock extends WallMountedBlock implements BlockEntityPr
         MACHINE_CAPACITOR_ADDON_SHAPE = new VoxelShape[Direction.values().length][BlockFace.values().length];
         CROP_FILTER_ADDON_SHAPE = new VoxelShape[Direction.values().length][BlockFace.values().length];
         MACHINE_EFFICIENCY_ADDON_SHAPE = new VoxelShape[Direction.values().length][BlockFace.values().length];
+        MACHINE_EFFICIENCY_ADDON_TIER_2_SHAPE = new VoxelShape[Direction.values().length][BlockFace.values().length];
         MACHINE_FLUID_ADDON_SHAPE = new VoxelShape[Direction.values().length][BlockFace.values().length];
         MACHINE_INVENTORY_PROXY_ADDON_SHAPE = new VoxelShape[Direction.values().length][BlockFace.values().length];
         QUARRY_ADDON_SHAPE = new VoxelShape[Direction.values().length][BlockFace.values().length];
         MACHINE_HUNTER_ADDON_SHAPE = new VoxelShape[Direction.values().length][BlockFace.values().length];
         MACHINE_REDSTONE_ADDON_SHAPE = new VoxelShape[Direction.values().length][BlockFace.values().length];
         MACHINE_SPEED_ADDON_SHAPE = new VoxelShape[Direction.values().length][BlockFace.values().length];
+        MACHINE_SPEED_ADDON_TIER_2_SHAPE = new VoxelShape[Direction.values().length][BlockFace.values().length];
         STEAM_BOILER_ADDON_SHAPE = new VoxelShape[Direction.values().length][BlockFace.values().length];
         MACHINE_YIELD_ADDON_SHAPE = new VoxelShape[Direction.values().length][BlockFace.values().length];
         for (var facing : Direction.values()) {
@@ -312,6 +320,11 @@ public class MachineAddonBlock extends WallMountedBlock implements BlockEntityPr
                     Geometry.rotateVoxelShape(VoxelShapes.cuboid(0.25, 0.125, 0.1875, 0.75, 0.4375, 0.8125), facing, face),
                     Geometry.rotateVoxelShape(VoxelShapes.cuboid(0.75, 0.125, 0.125, 0.875, 0.5, 0.875), facing, face),
                     Geometry.rotateVoxelShape(VoxelShapes.cuboid(0.125, 0.125, 0.125, 0.25, 0.5, 0.875), facing, face));
+                MACHINE_EFFICIENCY_ADDON_TIER_2_SHAPE[facing.ordinal()][face.ordinal()] = VoxelShapes.union(
+                        Geometry.rotateVoxelShape(VoxelShapes.cuboid(0.0625, 0, 0.0625, 0.9375, 0.125, 0.9375), facing, face),
+                        Geometry.rotateVoxelShape(VoxelShapes.cuboid(0.25, 0.125, 0.1875, 0.75, 0.4375, 0.8125), facing, face),
+                        Geometry.rotateVoxelShape(VoxelShapes.cuboid(0.75, 0.125, 0.125, 0.875, 0.5, 0.875), facing, face),
+                        Geometry.rotateVoxelShape(VoxelShapes.cuboid(0.125, 0.125, 0.125, 0.25, 0.5, 0.875), facing, face));
                 MACHINE_FLUID_ADDON_SHAPE[facing.ordinal()][face.ordinal()] = VoxelShapes.union(
                     Geometry.rotateVoxelShape(VoxelShapes.cuboid(0.125, 0, 0.125, 0.875, 0.125, 0.875), facing, face),
                     Geometry.rotateVoxelShape(VoxelShapes.cuboid(0.0625, 0.3125, 0.1875, 0.375, 0.625, 0.5625), facing, face),
@@ -367,6 +380,17 @@ public class MachineAddonBlock extends WallMountedBlock implements BlockEntityPr
                     Geometry.rotateVoxelShape(VoxelShapes.cuboid(0.3125, 0.125, 0.25, 0.75, 0.1875, 0.6875), facing, face),
                     Geometry.rotateVoxelShape(VoxelShapes.cuboid(0.4375, 0.1875, 0.375, 0.625, 0.625, 0.5625), facing, face),
                     Geometry.rotateVoxelShape(VoxelShapes.cuboid(0.375, 0.1875, 0.4375, 0.6875, 0.5625, 0.5), facing, face));
+                MACHINE_SPEED_ADDON_TIER_2_SHAPE[facing.ordinal()][face.ordinal()] = VoxelShapes.union(
+                        Geometry.rotateVoxelShape(VoxelShapes.cuboid(0.0625, 0, 0.0625, 0.9375, 0.125, 0.9375), facing, face),
+                        Geometry.rotateVoxelShape(VoxelShapes.cuboid(0.3125, 0.125, 0.6875, 0.8125, 0.25, 0.8125), facing, face),
+                        Geometry.rotateVoxelShape(VoxelShapes.cuboid(0.1875, 0.125, 0.1875, 0.3125, 0.25, 0.8125), facing, face),
+                        Geometry.rotateVoxelShape(VoxelShapes.cuboid(0.125, 0.125, 0.3125, 0.1875, 0.25, 0.4375), facing, face),
+                        Geometry.rotateVoxelShape(VoxelShapes.cuboid(0.125, 0.125, 0.5625, 0.1875, 0.25, 0.6875), facing, face),
+                        Geometry.rotateVoxelShape(VoxelShapes.cuboid(0.5625, 0.125, 0.8125, 0.6875, 0.25, 0.875), facing, face),
+                        Geometry.rotateVoxelShape(VoxelShapes.cuboid(0.3125, 0.125, 0.8125, 0.4375, 0.25, 0.875), facing, face),
+                        Geometry.rotateVoxelShape(VoxelShapes.cuboid(0.3125, 0.125, 0.25, 0.75, 0.1875, 0.6875), facing, face),
+                        Geometry.rotateVoxelShape(VoxelShapes.cuboid(0.4375, 0.1875, 0.375, 0.625, 0.625, 0.5625), facing, face),
+                        Geometry.rotateVoxelShape(VoxelShapes.cuboid(0.375, 0.1875, 0.4375, 0.6875, 0.5625, 0.5), facing, face));
                 STEAM_BOILER_ADDON_SHAPE[facing.ordinal()][face.ordinal()] = VoxelShapes.union(
                     Geometry.rotateVoxelShape(VoxelShapes.cuboid(0.125, 0, 0.125, 0.875, 0.125, 0.875), facing, face),
                     Geometry.rotateVoxelShape(VoxelShapes.cuboid(0.125, 0.125, 0.3125, 0.25, 0.25, 0.4375), facing, face),
@@ -390,43 +414,48 @@ public class MachineAddonBlock extends WallMountedBlock implements BlockEntityPr
     }
     
     // AddonSettings is an immutable configuration record for a machine addon, and should be constructed in BlockContent
-    public record AddonSettings(boolean extender, float speedMultiplier, float efficiencyMultiplier, long addedCapacity, long addedInsert, boolean acceptEnergy, boolean needsSupport, VoxelShape[][] boundingShape) {
+    public record AddonSettings(boolean extender, float speedMultiplier, float efficiencyMultiplier, long addedCapacity, long addedInsert, boolean acceptEnergy, boolean needsSupport, VoxelShape[][] boundingShape, int tier) {
         public static AddonSettings getDefaultSettings() {
-            return new AddonSettings(false, 1.0f, 1.0f, 0, 0, false, true, null);
+            return new AddonSettings(false, 1.0f, 1.0f, 0, 0, false, true, null, 1);
         }
 
         // extender and needsSupport aren't strictly exclusive, but are unlikely to be used together
         public AddonSettings withExtender(boolean newExtender) {
-            return new AddonSettings(newExtender, speedMultiplier, efficiencyMultiplier, addedCapacity, addedInsert, acceptEnergy, needsSupport, boundingShape);
+            return new AddonSettings(newExtender, speedMultiplier, efficiencyMultiplier, addedCapacity, addedInsert, acceptEnergy, needsSupport, boundingShape, tier);
         }
 
         public AddonSettings withSpeedMultiplier(float newMultiplier) {
-            return new AddonSettings(extender, newMultiplier, efficiencyMultiplier, addedCapacity, addedInsert, acceptEnergy, needsSupport, boundingShape);
+            return new AddonSettings(extender, newMultiplier, efficiencyMultiplier, addedCapacity, addedInsert, acceptEnergy, needsSupport, boundingShape, tier);
         }
 
         public AddonSettings withEfficiencyMultiplier(float newMultiplier) {
-            return new AddonSettings(extender, speedMultiplier, newMultiplier, addedCapacity, addedInsert, acceptEnergy, needsSupport, boundingShape);
+            return new AddonSettings(extender, speedMultiplier, newMultiplier, addedCapacity, addedInsert, acceptEnergy, needsSupport, boundingShape, tier);
         }
 
         public AddonSettings withAddedCapacity(long newCapacity) {
-            return new AddonSettings(extender, speedMultiplier, efficiencyMultiplier, newCapacity, addedInsert, acceptEnergy, needsSupport, boundingShape);
+            return new AddonSettings(extender, speedMultiplier, efficiencyMultiplier, newCapacity, addedInsert, acceptEnergy, needsSupport, boundingShape, tier);
         }
 
         public AddonSettings withAddedInsert(long newInsert) {
-            return new AddonSettings(extender, speedMultiplier, efficiencyMultiplier, addedCapacity, newInsert, acceptEnergy, needsSupport, boundingShape);
+            return new AddonSettings(extender, speedMultiplier, efficiencyMultiplier, addedCapacity, newInsert, acceptEnergy, needsSupport, boundingShape, tier);
         }
         
         public AddonSettings withAcceptEnergy(boolean newAccept) {
-            return new AddonSettings(extender, speedMultiplier, efficiencyMultiplier, addedCapacity, addedInsert, newAccept, needsSupport, boundingShape);
+            return new AddonSettings(extender, speedMultiplier, efficiencyMultiplier, addedCapacity, addedInsert, newAccept, needsSupport, boundingShape, tier);
         }
 
         public AddonSettings withNeedsSupport(boolean newSupport) {
-            return new AddonSettings(extender, speedMultiplier, efficiencyMultiplier, addedCapacity, addedInsert, acceptEnergy, newSupport, boundingShape);
+            return new AddonSettings(extender, speedMultiplier, efficiencyMultiplier, addedCapacity, addedInsert, acceptEnergy, newSupport, boundingShape, tier);
         }
 
         // boundingShape should only be set if needsSupport is also set
         public AddonSettings withBoundingShape(VoxelShape[][] newShape) {
-            return new AddonSettings(extender, speedMultiplier, efficiencyMultiplier, addedCapacity, addedInsert, acceptEnergy, needsSupport, newShape);
+            return new AddonSettings(extender, speedMultiplier, efficiencyMultiplier, addedCapacity, addedInsert, acceptEnergy, needsSupport, newShape, tier);
+        }
+
+        // boundingShape should only be set if needsSupport is also set
+        public AddonSettings withTier(int newTier) {
+            return new AddonSettings(extender, speedMultiplier, efficiencyMultiplier, addedCapacity, addedInsert, acceptEnergy, needsSupport, boundingShape, newTier);
         }
     }
 }

@@ -200,7 +200,9 @@ public class BlockEntitiesContent implements ArchitecturyRegistryContainer<Block
     
     public static final BlockEntityType<AddonBlockEntity> ADDON_ENTITY = FabricBlockEntityTypeBuilder.create(AddonBlockEntity::new,
       BlockContent.MACHINE_SPEED_ADDON,
+      BlockContent.MACHINE_SPEED_ADDON_TIER_2,
       BlockContent.MACHINE_EFFICIENCY_ADDON,
+      BlockContent.MACHINE_EFFICIENCY_ADDON_TIER_2,
       BlockContent.MACHINE_FLUID_ADDON,
       BlockContent.MACHINE_HUNTER_ADDON,
       BlockContent.MACHINE_YIELD_ADDON,

@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "b": {
+      "item": "oritech:machine_speed_addon"
+    },
+    "f": {
+      "item": "oritech:biosteel_ingot"
+    },
+    "c": {
+      "item": "oritech:plastic_sheet"
+    },
+    "s": {
+      "item": "oritech:magnetic_coil"
+    }
+  },
+  "pattern": [
+    "b b",
+    "ccc",
+    "sfs"
+  ],
+  "result": {
+    "count": 1,
+    "id": "oritech:machine_speed_addon_tier_2"
+  }
+}

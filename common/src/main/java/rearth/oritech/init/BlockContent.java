@@ -197,7 +197,11 @@ public class BlockContent implements ArchitecturyBlockRegistryContainer {
     public static final Block CAPACITOR_ADDON_EXTENDER = new MachineAddonBlock(AbstractBlock.Settings.copy(Blocks.IRON_BLOCK).nonOpaque(), AddonSettings.getDefaultSettings().withExtender(true).withNeedsSupport(false).withAddedCapacity(2_500_000).withAddedInsert(500));
     public static final Block STEAM_BOILER_ADDON = new SteamBoilerAddonBlock(AbstractBlock.Settings.copy(Blocks.IRON_BLOCK).nonOpaque(), AddonSettings.getDefaultSettings().withBoundingShape(MachineAddonBlock.STEAM_BOILER_ADDON_SHAPE));
     public static final Block MACHINE_REDSTONE_ADDON = new RedstoneAddonBlock(AbstractBlock.Settings.copy(Blocks.IRON_BLOCK).nonOpaque(), AddonSettings.getDefaultSettings().withBoundingShape(MachineAddonBlock.MACHINE_REDSTONE_ADDON_SHAPE));
-    
+
+    // tier 2 addon
+    public static final Block MACHINE_SPEED_ADDON_TIER_2 = new MachineAddonBlock(AbstractBlock.Settings.copy(Blocks.IRON_BLOCK).nonOpaque(), AddonSettings.getDefaultSettings().withSpeedMultiplier(0.80f).withEfficiencyMultiplier(1.05f).withBoundingShape(MachineAddonBlock.MACHINE_SPEED_ADDON_SHAPE).withTier(2));
+    public static final Block MACHINE_EFFICIENCY_ADDON_TIER_2 = new MachineAddonBlock(AbstractBlock.Settings.copy(Blocks.IRON_BLOCK).nonOpaque(), AddonSettings.getDefaultSettings().withEfficiencyMultiplier(0.80f).withBoundingShape(MachineAddonBlock.MACHINE_EFFICIENCY_ADDON_SHAPE).withTier(2));
+
     //region reactor
     public static final Block REACTOR_CONTROLLER = new ReactorControllerBlock(AbstractBlock.Settings.copy(Blocks.IRON_BLOCK).luminance(state -> 5));
     public static final Block REACTOR_WALL = new ReactorWallBlock(AbstractBlock.Settings.copy(Blocks.IRON_BLOCK));
