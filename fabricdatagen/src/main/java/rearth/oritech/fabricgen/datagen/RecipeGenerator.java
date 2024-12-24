@@ -357,9 +357,6 @@ public class RecipeGenerator extends FabricRecipeProvider {
         offerGeneratorRecipe(exporter, BlockContent.STEAM_BOILER_ADDON.asItem(), Ingredient.fromTag(TagContent.SILICON), Ingredient.ofItems(ItemContent.ADAMANT_INGOT), Ingredient.ofItems(BlockContent.FLUID_PIPE), Ingredient.ofItems(ItemContent.COAL_DUST), "addon/steamboileralt");
         offerGeneratorRecipe(exporter, BlockContent.MACHINE_REDSTONE_ADDON.asItem(), Ingredient.fromTag(TagContent.MACHINE_PLATING), Ingredient.ofItems(Items.REPEATER), Ingredient.ofItems(Items.COMPARATOR), Ingredient.ofItems(Items.REDSTONE), "addon/redstone");
         offerTwoComponentRecipe(exporter, BlockContent.CAPACITOR_ADDON_EXTENDER.asItem(), Ingredient.ofItems(BlockContent.MACHINE_EXTENDER.asItem()), Ingredient.ofItems(BlockContent.MACHINE_CAPACITOR_ADDON), "addon/capextender");
-        // tier 2 addons
-        offerGeneratorRecipe(exporter, BlockContent.MACHINE_SPEED_ADDON_TIER_2.asItem(), Ingredient.ofItems(BlockContent.MACHINE_SPEED_ADDON), Ingredient.ofItems(BlockContent.MACHINE_SPEED_ADDON), Ingredient.ofItems(ItemContent.MAGNETIC_COIL), Ingredient.ofItems(ItemContent.MAGNETIC_COIL), "addon/speed2");
-        offerGeneratorRecipe(exporter, BlockContent.MACHINE_EFFICIENCY_ADDON_TIER_2.asItem(), Ingredient.ofItems(BlockContent.MACHINE_EFFICIENCY_ADDON), Ingredient.ofItems(BlockContent.MACHINE_EFFICIENCY_ADDON), Ingredient.ofItems(ItemContent.MAGNETIC_COIL), Ingredient.ofItems(ItemContent.MAGNETIC_COIL), "addon/eff2");
 
         // cores
         offerMachineCoreRecipe(exporter, BlockContent.MACHINE_CORE_1.asItem(), Ingredient.fromTag(ItemTags.PLANKS), Ingredient.ofItems(Items.CRAFTING_TABLE), "core1");
