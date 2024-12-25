@@ -270,6 +270,7 @@
   "emi.title.oritech.cookingtime": "%ds (%d ticks)",
   "emi.title.oritech.collisionspeed": "Required collision energy: %sJ",
   "itemgroup.oritech.machines": "Oritech Machines",
+  "itemgroup.oritech.addons": "Oritech Addons",
   "itemgroup.oritech.components": "Oritech Components",
   "itemgroup.oritech.decorative": "Oritech Blocks",
   "itemgroup.oritech.equipment": "Oritech Equipment",

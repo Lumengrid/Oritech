@@ -267,6 +267,7 @@
   "emi.title.oritech.cookingtime": "%d秒（%d刻）",
   "emi.title.oritech.collisionspeed": "所需碰撞能量： %sJ",
   "itemgroup.oritech.machines": "Oritech 机械",
+  "itemgroup.oritech.addons": "Oritech Addons",
   "itemgroup.oritech.components": "Oritech 组件",
   "itemgroup.oritech.decorative": "Oritech 方块",
   "itemgroup.oritech.equipment": "Oritech 装备",

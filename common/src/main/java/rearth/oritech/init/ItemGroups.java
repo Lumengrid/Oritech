@@ -26,7 +26,10 @@ public class ItemGroups implements ArchitecturyRegistryContainer<ItemGroup> {
     public static void add(ItemContent.Groups group, ItemStack item) {
         registered.computeIfAbsent(group, k -> new ArrayList<>()).add(item);
     }
-    
+    public static final ItemGroup ADDONS_GROUP = CreativeTabRegistry.create(
+            Text.translatable("itemgroup.oritech.addons"),
+            () -> new ItemStack(BlockContent.MACHINE_SPEED_ADDON.asItem()));
+
     public static final ItemGroup MACHINE_GROUP = CreativeTabRegistry.create(
       Text.translatable("itemgroup.oritech.machines"),
       () -> new ItemStack(BlockContent.FERTILIZER_BLOCK.asItem()));
@@ -58,6 +61,7 @@ public class ItemGroups implements ArchitecturyRegistryContainer<ItemGroup> {
         ArchitecturyRegistryContainer.super.postProcessField(namespace, value, identifier, field, supplier);
         
         List<ItemStack> items = null;
+        if (value.equals(ADDONS_GROUP)) items = registered.get(ItemContent.Groups.addons);
         if (value.equals(MACHINE_GROUP)) items = registered.get(ItemContent.Groups.machines);
         if (value.equals(COMPONENT_GROUP)) items = registered.get(ItemContent.Groups.components);
         if (value.equals(EQUIPMENT_GROUP)) items = registered.get(ItemContent.Groups.equipment);

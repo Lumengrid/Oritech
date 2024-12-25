@@ -267,6 +267,7 @@
   "emi.title.oritech.cookingtime": "%ds (%d ticks)",
   "emi.title.oritech.collisionspeed": "Необхідна енергія зіткнення: %sJ",
   "itemgroup.oritech.machines": "Орітеховиє машини",
+  "itemgroup.oritech.addons": "Орітеховиє Addons",
   "itemgroup.oritech.components": "Орітехові компоненти",
   "itemgroup.oritech.decorative": "Блоки Орітеха",
   "itemgroup.oritech.equipment": "Орітехові Спорядження",

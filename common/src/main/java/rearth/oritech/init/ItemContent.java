@@ -157,7 +157,7 @@ public class ItemContent implements ArchitecturyRegistryContainer<Item> {
     }
     
     public enum Groups {
-        machines, components, equipment, decorative
+        addons, machines, components, equipment, decorative
     }
     
     @Retention(RetentionPolicy.RUNTIME)
