@@ -143,7 +143,7 @@ public class DestroyerBlockEntity extends MultiblockFrameInteractionEntity {
         for (int i = 1; i <= range; i++) {
             var checkPos = toolPosition.down(i);
             var targetState = world.getBlockState(checkPos);
-            if (!targetState.getBlock().equals(Blocks.AIR) && !targetState.isLiquid()) {  // pass through both air and liquid
+            if (!targetState.isAir() && !targetState.isLiquid()) {  // pass through both air and liquid
                 quarryTarget = checkPos;
                 targetHardness = targetState.getHardness(world, checkPos);
                 syncQuarryNetworkData();
