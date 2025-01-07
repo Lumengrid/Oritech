@@ -1,126 +1,468 @@
 {
   "added": [
-    "oritech:assembler_superconductor",
-    "oritech:destroyer_block_destroyer",
-    "oritech:placer_block_placer",
-    "oritech:pulverizerdust_coal",
-    "oritech:big_solar_panel_block_solar",
-    "oritech:centrifugefluid_polymerresin",
-    "oritech:foundry_block_foundry",
-    "oritech:machine_core_2_core2",
-    "oritech:pulverizerdust_adamant",
-    "oritech:nickel_ingot_from_smelting_raw_nickel",
-    "oritech:pulverizerdust_packagedwheatbio",
-    "oritech:pulverizerraw_gold",
-    "oritech:energy_pipe_energy",
-    "oritech:machine_core_3_core3alt",
-    "oritech:assemblermotor",
-    "oritech:pulverizerraw_nickel",
-    "oritech:basic_generator_block_basicgen",
-    "oritech:grinderraw_gold",
-    "oritech:ceiling_light_hanging_hanginglight",
-    "oritech:pulverizerraw_iron",
-    "oritech:chainsaw_chainsaw",
-    "oritech:pulverizerraw_copper",
-    "oritech:tech_door_techdoor",
-    "oritech:atomic_forge_block_atomicforge",
-    "oritech:pulverizer_block_pulverizer",
-    "oritech:large_storage_block_bigstorage",
-    "oritech:pulverizerdust_energite",
-    "oritech:item_pipe_item",
-    "oritech:dubios_container_dubios",
-    "oritech:machine_core_7_core7",
-    "oritech:atomicforge_wafer",
-    "oritech:pulverizerdust_quartz",
-    "oritech:pulverizerraw_platinum",
-    "oritech:foundryalloyinv_adamant",
-    "oritech:centrifugefluid_biopolymer",
-    "oritech:machine_inventory_proxy_addon_invproxy",
-    "oritech:small_tank_block_stank",
-    "oritech:grinderraw_iron",
-    "oritech:oritech_guide_guidebook",
-    "oritech:packed_wheat",
-    "oritech:crop_filter_addon_cropfilter",
-    "oritech:assembler_processingunit",
-    "oritech:exo_helmet_exohelm",
-    "oritech:atomicforge_aicomputer",
-    "oritech:machine_core_1_core1",
-    "oritech:machine_capacitor_addon_capacitor",
-    "oritech:promethium_axe_promaxe",
-    "oritech:atomicforge_advcomputer",
-    "oritech:overcharged_crystal_overchargedcrystal",
-    "oritech:machine_efficiency_addon_effaddon",
-    "oritech:exo_chestplate_exochest",
-    "oritech:tech_button_techbutton",
-    "oritech:machine_core_6_core6",
-    "oritech:target_designator_designator",
-    "oritech:silicon_from_smelting_raw_silicon",
-    "oritech:machine_plating_block_platingmanual",
-    "oritech:machine_speed_addon_speedaddon",
-    "oritech:grinderraw_platinum",
-    "oritech:pulverizerdust_electrum",
-    "oritech:powered_furnace_block_electricfurnace",
-    "oritech:atomicforgedust_copper",
-    "oritech:pulverizerdust_steel",
-    "oritech:assembler_block_assembler",
-    "oritech:nickel_nugget_from_smelting_small_nickel_dust",
-    "oritech:centrifugefluid_plasticbio",
-    "oritech:atomicforgedust_platinum",
-    "oritech:exo_leggings_exolegs",
-    "oritech:raw_siliconmanualrawsilicon",
-    "oritech:bio_generator_block_biogen",
-    "oritech:machine_acceptor_addon_acceptor",
-    "oritech:laser_arm_block_atomicforge",
-    "oritech:fuel_generator_block_fuelgen",
-    "oritech:assemblerbattery",
-    "oritech:machine_core_4_core4",
-    "oritech:foundryalloy_electrum",
-    "oritech:atomicforgedust_iron",
-    "oritech:tech_lever_techlever",
-    "oritech:deep_drill_block_deepdrill",
-    "oritech:treefeller_block_treefeller",
-    "oritech:ceiling_light_ceilightlight",
-    "oritech:small_storage_block_smallstorage",
-    "oritech:assembler_enderlens",
-    "oritech:atomicforgedust_gold",
-    "oritech:copper_nugget_from_smelting_small_copper_dust",
-    "oritech:foundryalloy_energite",
-    "oritech:advanced_battery_advbattery",
-    "oritech:assembler_solidbiofuel",
-    "oritech:assembler_fwire",
-    "oritech:platinum_ingot_from_smelting_raw_platinum",
-    "oritech:pulverizerore_nickel",
-    "oritech:biosteel_ingotbiosteel",
-    "oritech:machine_extender_extender",
-    "oritech:centrifuge_block_centrifuge",
-    "oritech:assembler_fluxgate",
-    "oritech:exo_boots_exoboots",
-    "oritech:lava_generator_block_lavagen",
-    "oritech:drone_port_block_droneportalt",
-    "oritech:item_filter_block_itemfilter",
-    "oritech:fluid_pipe_fluid",
-    "oritech:foundryalloy_steel",
-    "oritech:atomicforge_prometheum",
-    "oritech:machine_core_5_core5",
-    "oritech:promethium_pickaxe_prompick",
-    "oritech:grinderore_platinum",
-    "oritech:pump_block_pump",
-    "oritech:pulverizerdust_duratium",
-    "oritech:centrifuge_carbon",
-    "oritech:foundryalloy_duratium",
-    "oritech:atomicforge_compensator",
-    "oritech:hand_drill_handdrill",
-    "oritech:machine_fluid_addon_fluid",
-    "oritech:fragment_forge_block_crusher",
-    "oritech:fertilizer_block_fertilizer",
-    "oritech:atomicforgedust_nickel",
-    "oritech:machine_yield_addon_yield",
-    "oritech:assemblermagnet",
-    "oritech:platinum_nugget_from_smelting_small_platinum_dust",
-    "oritech:capacitor_addon_extender_capextender",
-    "oritech:grinderdust_pearl_enderic",
-    "oritech:machine_frame_block_frame",
-    "oritech:pulverizerdust_biosteel",
-    "oritech:wrench"
-  ]
+    "oritech:crafting/energyport",
+    "oritech:crafting/stairs/nickel",
+    "oritech:crafting/biogen",
+    "emi:/emi/bucket_filling/oritech/still_oil",
+    "oritech:uranium_pelletblockinv",
+    "oritech:crafting/boostedelytra",
+    "oritech:crafting/particlemotor",
+    "oritech:crafting/doublerod",
+    "oritech:crafting/core7",
+    "oritech:biomass_blockblock",
+    "oritech:crafting/addon/redstone",
+    "oritech:crafting/addon/capextender",
+    "oritech:crafting/addon/capacitor",
+    "oritech:laser/fluxite",
+    "oritech:crafting/frame",
+    "oritech:crafting/addon/acceptor",
+    "oritech:crafting/addon/processing",
+    "oritech:motor/advbattery",
+    "oritech:crafting/fluidpipe",
+    "oritech:crafting/particlecollector",
+    "oritech:crafting/cage",
+    "oritech:biosteel_blockblock",
+    "oritech:crafting/alloy/rawsilicon",
+    "oritech:crafting/quadrod",
+    "oritech:crafting/deepdrill",
+    "oritech:crafting/slab/nickel",
+    "oritech:crafting/prompick",
+    "oritech:centrifuge/fluid/fuel",
+    "oritech:crafting/basicjetpack",
+    "oritech:crafting/handdrill",
+    "oritech:fluxite_blockblock",
+    "oritech:crafting/crusher",
+    "oritech:crafting/promaxe",
+    "oritech:crafting/core1",
+    "oritech:electrum_blockblock",
+    "oritech:crafting/centrifuge",
+    "oritech:crafting/fertilizer",
+    "oritech:crafting/duct_fluid",
+    "oritech:crafting/duct_item",
+    "oritech:crafting/addon/speed",
+    "emi:/emi/bucket_filling/oritech/still_fuel",
+    "oritech:crafting/pressureplate/iron",
+    "oritech:crafting/chargeralt",
+    "oritech:crafting/catalyst_alt",
+    "oritech:crafting/extender",
+    "oritech:crafting/basicgen",
+    "oritech:crafting/frame_item",
+    "oritech:crafting/core2",
+    "oritech:crafting/bigstorage",
+    "oritech:crafting/addon/fluid",
+    "oritech:crafting/metalbeams",
+    "oritech:crafting/frame_energy",
+    "oritech:crafting/nuke",
+    "oritech:crafting/pulverizeralt",
+    "oritech:crafting/assembleralt",
+    "oritech:crafting/addon/eff",
+    "oritech:crafting/reactorvent",
+    "oritech:crafting/core4",
+    "oritech:crafting/cooler",
+    "oritech:crafting/condenser",
+    "oritech:crafting/singlerod",
+    "oritech:steel_blockblock",
+    "oritech:crafting/placer",
+    "oritech:crafting/redstoneport",
+    "oritech:crafting/witherrose",
+    "oritech:crafting/electricfurnace",
+    "oritech:crafting/core3alt",
+    "oritech:energite_blockblock",
+    "oritech:crafting/laserarm",
+    "oritech:crafting/particlesensor",
+    "oritech:crafting/exolegs",
+    "oritech:foundry/alloy/netherite",
+    "oritech:crafting/lavagen",
+    "oritech:crafting/spawner",
+    "oritech:crafting/duct_energy",
+    "oritech:platinum_blockblock",
+    "oritech:crafting/particlecontroller",
+    "oritech:crafting/_hunter",
+    "oritech:crafting/enchanter",
+    "oritech:crafting/designator",
+    "oritech:crafting/acceleratorring",
+    "oritech:plastic_blockblock",
+    "oritech:crafting/techbutton",
+    "oritech:crafting/hanginglight",
+    "oritech:motor/dubios",
+    "oritech:crafting/destroyer",
+    "oritech:crafting/slab/machine",
+    "oritech:crafting/atomicforge",
+    "oritech:crafting/frame_superconductor",
+    "oritech:crafting/addon/steamboiler",
+    "oritech:crafting/addon/cropfilter",
+    "oritech:crafting/treefeller",
+    "oritech:crafting/booster",
+    "oritech:nickel_blockblock",
+    "oritech:crafting/pressureplate/machine",
+    "oritech:motor/overchargedcrystal",
+    "oritech:crafting/ceilightlight",
+    "oritech:adamant_blockblock",
+    "oritech:crafting/addon/invproxy",
+    "oritech:crafting/fuelport",
+    "oritech:crafting/controller",
+    "oritech:crafting/exohelm",
+    "oritech:crafting/energy",
+    "oritech:duratium_blockblock",
+    "oritech:crafting/addon/yield",
+    "emi:/emi/bucket_filling/oritech/still_steam",
+    "oritech:crafting/core6",
+    "oritech:crafting/addon/quarry",
+    "oritech:raw_platinum_blockblock",
+    "oritech:crafting/industrialglass",
+    "oritech:crafting/slab/iron",
+    "oritech:crafting/stank",
+    "oritech:silicon_blockblock",
+    "oritech:crafting/weedex",
+    "oritech:crafting/stairs/iron",
+    "oritech:crafting/absorberport",
+    "oritech:crafting/exoboostedelytraalt",
+    "oritech:crafting/pressureplate/nickel",
+    "oritech:crafting/stairs/machine",
+    "oritech:crafting/reflector",
+    "oritech:plutonium_pelletblockinv",
+    "oritech:crafting/chainsaw",
+    "oritech:crafting/itemfilter",
+    "oritech:crafting/techlever",
+    "oritech:crafting/foundry",
+    "oritech:crafting/techdoor",
+    "oritech:crafting/fuelgen",
+    "oritech:crafting/steamgen",
+    "oritech:crafting/item",
+    "oritech:crafting/solar",
+    "oritech:crafting/reactorheatpipe",
+    "oritech:crafting/droneportalt",
+    "oritech:crafting/exoboots",
+    "oritech:crafting/exojetpack",
+    "oritech:particle/plutonium",
+    "oritech:crafting/exochest",
+    "oritech:crafting/core5",
+    "oritech:raw_nickel_blockblock",
+    "oritech:crafting/smallstorage",
+    "oritech:crafting/nukebetter",
+    "oritech:crafting/frame_fluid",
+    "oritech:crafting/wrench",
+    "oritech:crafting/duct_superconductor",
+    "oritech:crafting/pump"
+  ],
+  "resolutions": {
+    "oritech:assembler/reactorplatingalt": [
+      {
+        "type": "item",
+        "id": "oritech:reactor_wall",
+        "amount": 3
+      }
+    ],
+    "oritech:pulverizer/raw/gold": [
+      "item:oritech:gold_dust",
+      {
+        "type": "item",
+        "id": "oritech:small_gold_dust",
+        "amount": 3
+      }
+    ],
+    "oritech:atomicforge/urandust": [
+      "item:oritech:uranium_gem"
+    ],
+    "oritech:grinder/raw/copper": [
+      "item:oritech:copper_clump"
+    ],
+    "oritech:centrifuge/redstoneuran": [
+      "item:oritech:small_uranium_dust"
+    ],
+    "oritech:assembler/platingnickel": [
+      {
+        "type": "item",
+        "id": "oritech:nickel_plating_block",
+        "amount": 8
+      }
+    ],
+    "oritech:atomicforge/aicomputer": [
+      "item:oritech:super_ai_chip"
+    ],
+    "oritech:foundry/alloy/inverse/steel": [
+      "item:oritech:steel_ingot"
+    ],
+    "oritech:grinder/dust/uranium": [
+      {
+        "type": "item",
+        "id": "oritech:uranium_dust",
+        "amount": 2
+      },
+      "item:oritech:small_plutonium_dust"
+    ],
+    "oritech:pulverizer/dust/steel": [
+      "item:oritech:steel_dust"
+    ],
+    "oritech:assembler/processingunit": [
+      "item:oritech:processing_unit"
+    ],
+    "oritech:assembler/solidbiofuel": [
+      "item:oritech:solid_biofuel"
+    ],
+    "oritech:assembler/enderlens": [
+      "item:oritech:enderic_lens"
+    ],
+    "oritech:centrifuge/fluid/polymerresin": [
+      "item:oritech:polymer_resin"
+    ],
+    "oritech:centrifuge/fluid/biopolymer": [
+      "item:oritech:raw_biopolymer"
+    ],
+    "oritech:assembler/plating": [
+      {
+        "type": "item",
+        "id": "oritech:machine_plating_block",
+        "amount": 8
+      }
+    ],
+    "oritech:foundry/alloy/duratium": [
+      "item:oritech:duratium_ingot"
+    ],
+    "oritech:grinder/raw/platinum": [
+      "item:oritech:platinum_clump",
+      {
+        "type": "item",
+        "id": "oritech:small_platinum_clump",
+        "amount": 3
+      }
+    ],
+    "oritech:grinder/raw/nickel": [
+      "item:oritech:nickel_clump"
+    ],
+    "oritech:centrifuge/clumpwet/gold": [
+      {
+        "type": "item",
+        "id": "oritech:gold_gem",
+        "amount": 2
+      }
+    ],
+    "oritech:grinder/raw/gold": [
+      "item:oritech:gold_clump",
+      {
+        "type": "item",
+        "id": "oritech:small_gold_clump",
+        "amount": 3
+      },
+      {
+        "type": "item",
+        "id": "oritech:small_copper_clump",
+        "amount": 3
+      }
+    ],
+    "oritech:foundry/alloy/inverse/adamant": [
+      "item:oritech:adamant_ingot"
+    ],
+    "oritech:grinder/dust/pearl_enderic": [
+      {
+        "type": "item",
+        "id": "oritech:enderic_compound",
+        "amount": 12
+      }
+    ],
+    "oritech:pulverizer/ore/platinum": [
+      {
+        "type": "item",
+        "id": "oritech:raw_platinum",
+        "amount": 2
+      }
+    ],
+    "oritech:pulverizer/raw/iron": [
+      "item:oritech:iron_dust",
+      {
+        "type": "item",
+        "id": "oritech:small_iron_dust",
+        "amount": 3
+      }
+    ],
+    "oritech:grinder/raw/iron": [
+      "item:oritech:iron_clump",
+      {
+        "type": "item",
+        "id": "oritech:small_iron_clump",
+        "amount": 3
+      },
+      {
+        "type": "item",
+        "id": "oritech:small_nickel_clump",
+        "amount": 3
+      }
+    ],
+    "oritech:centrifuge/clumpwet/copper": [
+      {
+        "type": "item",
+        "id": "oritech:copper_gem",
+        "amount": 2
+      }
+    ],
+    "oritech:assembler/motor": [
+      {
+        "type": "item",
+        "id": "oritech:motor",
+        "amount": 2
+      }
+    ],
+    "oritech:pulverizer/raw/nickel": [
+      "item:oritech:nickel_dust",
+      {
+        "type": "item",
+        "id": "oritech:small_nickel_dust",
+        "amount": 3
+      }
+    ],
+    "oritech:pulverizer/raw/copper": [
+      "item:oritech:copper_dust",
+      {
+        "type": "item",
+        "id": "oritech:small_copper_dust",
+        "amount": 3
+      }
+    ],
+    "oritech:assembler/magnet": [
+      {
+        "type": "item",
+        "id": "oritech:magnetic_coil",
+        "amount": 2
+      }
+    ],
+    "oritech:pulverizer/dust/quartz": [
+      "item:oritech:quartz_dust"
+    ],
+    "oritech:centrifuge/clumpwet/iron": [
+      {
+        "type": "item",
+        "id": "oritech:iron_gem",
+        "amount": 2
+      }
+    ],
+    "oritech:foundry/alloy/electrum": [
+      "item:oritech:electrum_ingot"
+    ],
+    "oritech:pulverizer/dust/duratium": [
+      "item:oritech:duratium_dust"
+    ],
+    "oritech:assembler/platingiron": [
+      {
+        "type": "item",
+        "id": "oritech:iron_plating_block",
+        "amount": 8
+      }
+    ],
+    "oritech:pulverizer/dust/biosteel": [
+      "item:oritech:biosteel_dust"
+    ],
+    "oritech:assembler/fwire": [
+      {
+        "type": "item",
+        "id": "oritech:insulated_wire",
+        "amount": 12
+      }
+    ],
+    "oritech:assembler/superconductor": [
+      {
+        "type": "item",
+        "id": "oritech:superconductor",
+        "amount": 3
+      }
+    ],
+    "oritech:foundry/alloy/biosteel": [
+      "item:oritech:biosteel_ingot"
+    ],
+    "oritech:pulverizer/raw/platinum": [
+      "item:oritech:platinum_dust",
+      {
+        "type": "item",
+        "id": "oritech:small_platinum_dust",
+        "amount": 3
+      }
+    ],
+    "oritech:foundry/alloy/energite": [
+      "item:oritech:energite_ingot"
+    ],
+    "oritech:pulverizer/ore/nickel": [
+      {
+        "type": "item",
+        "id": "oritech:raw_nickel",
+        "amount": 2
+      }
+    ],
+    "oritech:assembler/uranpelletbasic": [
+      {
+        "type": "item",
+        "id": "oritech:uranium_pellet",
+        "amount": 2
+      }
+    ],
+    "oritech:pulverizer/dust/coal": [
+      "item:oritech:coal_dust"
+    ],
+    "oritech:atomicforge/wafer": [
+      "item:oritech:silicon_wafer"
+    ],
+    "oritech:centrifuge/clumpwet/platinum": [
+      {
+        "type": "item",
+        "id": "oritech:platinum_gem",
+        "amount": 2
+      }
+    ],
+    "oritech:centrifuge/clumpwet/nickel": [
+      {
+        "type": "item",
+        "id": "oritech:nickel_gem",
+        "amount": 2
+      }
+    ],
+    "oritech:assembler/plutoniumpelletbasic": [
+      {
+        "type": "item",
+        "id": "oritech:plutonium_pellet",
+        "amount": 2
+      }
+    ],
+    "oritech:pulverizer/dust/adamant": [
+      "item:oritech:adamant_dust"
+    ],
+    "oritech:pulverizer/dust/uraniumore": [
+      {
+        "type": "item",
+        "id": "oritech:raw_uranium",
+        "amount": 2
+      }
+    ],
+    "oritech:pulverizer/dust/electrum": [
+      "item:oritech:electrum_dust"
+    ],
+    "oritech:atomicforge/advcomputer": [
+      "item:oritech:advanced_computing_engine"
+    ],
+    "oritech:centrifuge/fluid/plasticbio": [
+      "item:oritech:plastic_sheet"
+    ],
+    "oritech:assembler/fluxgate": [
+      "item:oritech:flux_gate"
+    ],
+    "oritech:pulverizer/dust/energite": [
+      "item:oritech:energite_dust"
+    ],
+    "oritech:assembler/batterybetter": [
+      {
+        "type": "item",
+        "id": "oritech:basic_battery",
+        "amount": 2
+      }
+    ],
+    "oritech:atomicforge/prometheum": [
+      "item:oritech:prometheum_ingot"
+    ],
+    "oritech:centrifuge/carbon": [
+      "item:oritech:carbon_fibre_strands"
+    ],
+    "oritech:atomicforge/compensator": [
+      "item:oritech:heisenberg_compensator"
+    ],
+    "oritech:pulverizer/dust/biobasic": [
+      "item:oritech:biomass"
+    ]
+  }
 }
