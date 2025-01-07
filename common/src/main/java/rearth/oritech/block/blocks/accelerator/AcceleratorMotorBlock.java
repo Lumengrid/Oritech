@@ -27,7 +27,7 @@ public class AcceleratorMotorBlock extends AcceleratorPassthroughBlock implement
     
     @Override
     protected VoxelShape getOutlineShape(BlockState state, BlockView world, BlockPos pos, ShapeContext context) {
-        return createCuboidShape(0, 0, 0, 16, 9, 16);
+        return createCuboidShape(0, 0, 0, 16, 11, 16);
     }
     
     @Nullable
