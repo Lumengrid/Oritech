@@ -61,6 +61,7 @@ public class MachineAddonBlock extends WallMountedBlock implements BlockEntityPr
     public static VoxelShape[][] MACHINE_HUNTER_ADDON_SHAPE;
     public static VoxelShape[][] MACHINE_REDSTONE_ADDON_SHAPE;
     public static VoxelShape[][] MACHINE_SPEED_ADDON_SHAPE;
+    public static VoxelShape[][] MACHINE_ULTIMATE_ADDON_SHAPE;
     public static VoxelShape[][] STEAM_BOILER_ADDON_SHAPE;
     public static VoxelShape[][] MACHINE_YIELD_ADDON_SHAPE;
     
@@ -264,6 +265,7 @@ public class MachineAddonBlock extends WallMountedBlock implements BlockEntityPr
         MACHINE_ACCEPTOR_ADDON_SHAPE = new VoxelShape[Direction.values().length][BlockFace.values().length];
         MACHINE_CAPACITOR_ADDON_SHAPE = new VoxelShape[Direction.values().length][BlockFace.values().length];
         MACHINE_PROCESSING_ADDON_SHAPE = new VoxelShape[Direction.values().length][BlockFace.values().length];
+        MACHINE_ULTIMATE_ADDON_SHAPE = new VoxelShape[Direction.values().length][BlockFace.values().length];
         CROP_FILTER_ADDON_SHAPE = new VoxelShape[Direction.values().length][BlockFace.values().length];
         MACHINE_EFFICIENCY_ADDON_SHAPE = new VoxelShape[Direction.values().length][BlockFace.values().length];
         MACHINE_FLUID_ADDON_SHAPE = new VoxelShape[Direction.values().length][BlockFace.values().length];
@@ -319,6 +321,9 @@ public class MachineAddonBlock extends WallMountedBlock implements BlockEntityPr
                 MACHINE_PROCESSING_ADDON_SHAPE[facing.ordinal()][face.ordinal()] = VoxelShapes.union(
                   Geometry.rotateVoxelShape(VoxelShapes.cuboid(0.0625, 0, 0.0625, 0.9375, 0.125, 0.9375), facing, face),
                   Geometry.rotateVoxelShape(VoxelShapes.cuboid(0.125, 0.25, 0.25, 0.875, 0.75, 0.75), facing, face));
+                MACHINE_ULTIMATE_ADDON_SHAPE[facing.ordinal()][face.ordinal()] = VoxelShapes.union(
+                  Geometry.rotateVoxelShape(VoxelShapes.cuboid(0.0625, 0, 0.0625, 0.9375, 0.125, 0.9375), facing, face),
+                  Geometry.rotateVoxelShape(VoxelShapes.cuboid(0.1875, 0.125, 0.1875, 0.875, 1, 0.75), facing, face));
                 MACHINE_FLUID_ADDON_SHAPE[facing.ordinal()][face.ordinal()] = VoxelShapes.union(
                     Geometry.rotateVoxelShape(VoxelShapes.cuboid(0.125, 0, 0.125, 0.875, 0.125, 0.875), facing, face),
                     Geometry.rotateVoxelShape(VoxelShapes.cuboid(0.0625, 0.3125, 0.1875, 0.375, 0.625, 0.5625), facing, face),

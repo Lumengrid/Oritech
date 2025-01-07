@@ -204,6 +204,7 @@ public class BlockEntitiesContent implements ArchitecturyRegistryContainer<Block
       BlockContent.MACHINE_SPEED_ADDON,
       BlockContent.MACHINE_PROCESSING_ADDON,
       BlockContent.MACHINE_EFFICIENCY_ADDON,
+      BlockContent.MACHINE_ULTIMATE_ADDON,
       BlockContent.MACHINE_FLUID_ADDON,
       BlockContent.MACHINE_HUNTER_ADDON,
       BlockContent.MACHINE_YIELD_ADDON,

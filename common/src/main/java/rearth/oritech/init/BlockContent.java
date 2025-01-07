@@ -55,35 +55,35 @@ public class BlockContent implements ArchitecturyBlockRegistryContainer {
     public static final Block MACHINE_FRAME_BLOCK = new MachineFrameBlock(AbstractBlock.Settings.copy(Blocks.IRON_BARS));
     
     public static final Block FLUID_PIPE = new FluidPipeBlock(AbstractBlock.Settings.copy(Blocks.IRON_BARS).strength(1.0f, 2.0f));
-	public static final Block FRAMED_FLUID_PIPE = new FluidPipeBlock.FramedFluidPipeBlock(AbstractBlock.Settings.copy(Blocks.IRON_BARS).strength(1.0f, 2.0f));
+    public static final Block FRAMED_FLUID_PIPE = new FluidPipeBlock.FramedFluidPipeBlock(AbstractBlock.Settings.copy(Blocks.IRON_BARS).strength(1.0f, 2.0f));
     public static final Block FLUID_PIPE_DUCT_BLOCK = new FluidPipeDuctBlock(AbstractBlock.Settings.copy(Blocks.IRON_BLOCK));
     public static final Block ENERGY_PIPE = new EnergyPipeBlock(AbstractBlock.Settings.copy(Blocks.IRON_BARS).strength(1.0f, 2.0f));
-	public static final Block FRAMED_ENERGY_PIPE = new EnergyPipeBlock.FramedEnergyPipeBlock(AbstractBlock.Settings.copy(Blocks.IRON_BARS).strength(1.0f, 2.0f));
+    public static final Block FRAMED_ENERGY_PIPE = new EnergyPipeBlock.FramedEnergyPipeBlock(AbstractBlock.Settings.copy(Blocks.IRON_BARS).strength(1.0f, 2.0f));
     public static final Block ENERGY_PIPE_DUCT_BLOCK = new EnergyPipeDuctBlock(AbstractBlock.Settings.copy(Blocks.IRON_BLOCK));
     public static final Block SUPERCONDUCTOR = new SuperConductorBlock(AbstractBlock.Settings.copy(Blocks.IRON_BARS).strength(1.0f, 2.0f));
-	public static final Block FRAMED_SUPERCONDUCTOR = new SuperConductorBlock.FramedSuperConductorBlock(AbstractBlock.Settings.copy(Blocks.IRON_BARS).strength(1.0f, 2.0f));
+    public static final Block FRAMED_SUPERCONDUCTOR = new SuperConductorBlock.FramedSuperConductorBlock(AbstractBlock.Settings.copy(Blocks.IRON_BARS).strength(1.0f, 2.0f));
     public static final Block SUPERCONDUCTOR_DUCT_BLOCK = new SuperConductorDuctBlock(AbstractBlock.Settings.copy(Blocks.IRON_BLOCK));
     public static final Block ITEM_PIPE = new ItemPipeBlock(AbstractBlock.Settings.copy(Blocks.IRON_BARS).strength(1.0f, 2.0f));
-	public static final Block FRAMED_ITEM_PIPE = new ItemPipeBlock.FramedItemPipeBlock(AbstractBlock.Settings.copy(Blocks.IRON_BARS).strength(1.0f, 2.0f));
+    public static final Block FRAMED_ITEM_PIPE = new ItemPipeBlock.FramedItemPipeBlock(AbstractBlock.Settings.copy(Blocks.IRON_BARS).strength(1.0f, 2.0f));
     public static final Block ITEM_PIPE_DUCT_BLOCK = new ItemPipeDuctBlock(AbstractBlock.Settings.copy(Blocks.IRON_BLOCK));
     public static final Block ITEM_FILTER_BLOCK = new ItemFilterBlock(AbstractBlock.Settings.copy(Blocks.IRON_BARS).strength(1.0f, 2.0f));
     
     @NoBlockItem
     public static final Block FLUID_PIPE_CONNECTION = new FluidPipeConnectionBlock(AbstractBlock.Settings.copy(Blocks.IRON_BARS).strength(1.0f, 2.0f));
-	@NoBlockItem
-	public static final Block FRAMED_FLUID_PIPE_CONNECTION = new FluidPipeConnectionBlock.FramedFluidPipeConnectionBlock(AbstractBlock.Settings.copy(Blocks.IRON_BARS).strength(1.0f, 2.0f));
+    @NoBlockItem
+    public static final Block FRAMED_FLUID_PIPE_CONNECTION = new FluidPipeConnectionBlock.FramedFluidPipeConnectionBlock(AbstractBlock.Settings.copy(Blocks.IRON_BARS).strength(1.0f, 2.0f));
     @NoBlockItem
     public static final Block ENERGY_PIPE_CONNECTION = new EnergyPipeConnectionBlock(AbstractBlock.Settings.copy(Blocks.IRON_BARS).strength(1.0f, 2.0f));
-	@NoBlockItem
-	public static final Block FRAMED_ENERGY_PIPE_CONNECTION = new EnergyPipeConnectionBlock.FramedEnergyPipeConnectionBlock(AbstractBlock.Settings.copy(Blocks.IRON_BARS).strength(1.0f, 2.0f));
+    @NoBlockItem
+    public static final Block FRAMED_ENERGY_PIPE_CONNECTION = new EnergyPipeConnectionBlock.FramedEnergyPipeConnectionBlock(AbstractBlock.Settings.copy(Blocks.IRON_BARS).strength(1.0f, 2.0f));
     @NoBlockItem
     public static final Block SUPERCONDUCTOR_CONNECTION = new SuperConductorConnectionBlock(AbstractBlock.Settings.copy(Blocks.IRON_BARS).strength(1.0f, 2.0f));
-	@NoBlockItem
-	public static final Block FRAMED_SUPERCONDUCTOR_CONNECTION = new SuperConductorConnectionBlock.FramedSuperConductorConnectionBlock(AbstractBlock.Settings.copy(Blocks.IRON_BARS).strength(1.0f, 2.0f));
+    @NoBlockItem
+    public static final Block FRAMED_SUPERCONDUCTOR_CONNECTION = new SuperConductorConnectionBlock.FramedSuperConductorConnectionBlock(AbstractBlock.Settings.copy(Blocks.IRON_BARS).strength(1.0f, 2.0f));
     @NoBlockItem
     public static final Block ITEM_PIPE_CONNECTION = new ItemPipeConnectionBlock(AbstractBlock.Settings.copy(Blocks.IRON_BARS).strength(1.0f, 2.0f));
-	@NoBlockItem
-	public static final Block FRAMED_ITEM_PIPE_CONNECTION = new ItemPipeConnectionBlock.FramedItemPipeConnectionBlock(AbstractBlock.Settings.copy(Blocks.IRON_BARS).strength(1.0f, 2.0f));
+    @NoBlockItem
+    public static final Block FRAMED_ITEM_PIPE_CONNECTION = new ItemPipeConnectionBlock.FramedItemPipeConnectionBlock(AbstractBlock.Settings.copy(Blocks.IRON_BARS).strength(1.0f, 2.0f));
     
     @NoBlockItem
     public static final Block FRAME_GANTRY_ARM = new Block(AbstractBlock.Settings.copy(Blocks.CHAIN).nonOpaque());
@@ -162,7 +162,7 @@ public class BlockContent implements ArchitecturyBlockRegistryContainer {
     @NoAutoDrop
     @DispenserPlace
     public static final Block SMALL_TANK_BLOCK = new SmallFluidTank(AbstractBlock.Settings.copy(Blocks.IRON_BLOCK).nonOpaque().pistonBehavior(PistonBehavior.DESTROY).luminance(Blocks.createLightLevelFromLitBlockState(15)));
-
+    
     @NoAutoDrop
     @DispenserPlace
     public static final Block CREATIVE_TANK_BLOCK = new CreativeFluidTank(AbstractBlock.Settings.copy(Blocks.IRON_BLOCK).nonOpaque().pistonBehavior(PistonBehavior.BLOCK).luminance(Blocks.createLightLevelFromLitBlockState(15)).hardness(-1.0F));
@@ -218,6 +218,7 @@ public class BlockContent implements ArchitecturyBlockRegistryContainer {
     public static final Block CAPACITOR_ADDON_EXTENDER = new MachineAddonBlock(AbstractBlock.Settings.copy(Blocks.IRON_BLOCK).nonOpaque(), AddonSettings.getDefaultSettings().withExtender(true).withNeedsSupport(false).withAddedCapacity(2_500_000).withAddedInsert(500));
     public static final Block STEAM_BOILER_ADDON = new SteamBoilerAddonBlock(AbstractBlock.Settings.copy(Blocks.IRON_BLOCK).nonOpaque(), AddonSettings.getDefaultSettings().withBoundingShape(MachineAddonBlock.STEAM_BOILER_ADDON_SHAPE));
     public static final Block MACHINE_REDSTONE_ADDON = new RedstoneAddonBlock(AbstractBlock.Settings.copy(Blocks.IRON_BLOCK).nonOpaque(), AddonSettings.getDefaultSettings().withBoundingShape(MachineAddonBlock.MACHINE_REDSTONE_ADDON_SHAPE));
+    public static final Block MACHINE_ULTIMATE_ADDON = new MachineAddonBlock(AbstractBlock.Settings.copy(Blocks.IRON_BLOCK).nonOpaque(), AddonSettings.getDefaultSettings().withSpeedMultiplier(0.83f).withEfficiencyMultiplier(0.9f).withBoundingShape(MachineAddonBlock.MACHINE_ULTIMATE_ADDON_SHAPE));
     
     //region reactor
     public static final Block REACTOR_CONTROLLER = new ReactorControllerBlock(AbstractBlock.Settings.copy(Blocks.IRON_BLOCK).luminance(state -> 5));
@@ -401,7 +402,7 @@ public class BlockContent implements ArchitecturyBlockRegistryContainer {
         if (!field.isAnnotationPresent(NoAutoDrop.class)) {
             autoRegisteredDrops.add(value);
         }
-
+        
         if (field.isAnnotationPresent(DispenserPlace.class)) {
             DispenserBlock.registerBehavior(value, new BlockPlacementDispenserBehavior());
         }
@@ -423,7 +424,7 @@ public class BlockContent implements ArchitecturyBlockRegistryContainer {
     @Target({ElementType.FIELD})
     public @interface NoAutoDrop {
     }
-
+    
     @Retention(RetentionPolicy.RUNTIME)
     @Target({ElementType.FIELD})
     public @interface DispenserPlace {
