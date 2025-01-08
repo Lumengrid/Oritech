@@ -274,12 +274,12 @@ public class SteamEngineEntity extends FluidMultiblockGeneratorBlockEntity {
         var res = new HashSet<Pair<BlockPos, Direction>>();
         
         var facing = getFacingForAddon();
-        var posA = new Vec3i(1, 0, 0);
-        var posB = new Vec3i(0, 0, -1);
-        var posC = new Vec3i(0, 0, 1);
-        var posD = new Vec3i(1, 0, -1);
-        var posE = new Vec3i(1, 0, 1);
-        var posF = new Vec3i(2, 0, 0);
+        var posA = new Vec3i(0, 0, 1); // front
+        var posB = new Vec3i(-1, 0, 0); // right
+        var posC = new Vec3i(1, 0, 0);  // left
+        var posD = new Vec3i(-1, 0, -1); // back left
+        var posE = new Vec3i(1, 0, -1); // back right
+        var posF = new Vec3i(0, 0, -2);  // back
         var worldPosA = (BlockPos) Geometry.offsetToWorldPosition(facing, posA, pos);
         var worldPosB = (BlockPos) Geometry.offsetToWorldPosition(facing, posB, pos);
         var worldPosC = (BlockPos) Geometry.offsetToWorldPosition(facing, posC, pos);
