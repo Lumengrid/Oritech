@@ -1,6 +1,0 @@
-- Add synergy matrix addon block
-- Add missing default emi recipe entries
-- Update arcane catalyst tooltip
-- Update Accelerator Motor hitbox
-- Fix destroyer block getting blocked by different air variants
-- Fix pump not using energy
